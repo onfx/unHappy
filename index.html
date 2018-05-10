@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>unHappy-不开心的事 </title>
+  <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="./stylesheets/app.css">
+
+  <script src="./javascripts/jquery-3.3.1.min.js"></script>
+  <script src="./javascripts/bootstrap.min.js"></script>
+
+  <script src="./javascripts/nebPay.js"></script>
+  <script src="./javascripts/app.js"></script>
+</head>
+
+<body class="bg-dark">
+  <div class="noExtension hide" id="noExtension">
+    <div class="card">
+      <div class="card-body mt-5 mb-5"> <h1>FBI　WARNING </h1><br>
+        Please use Chrome and install <a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a>  to use unHappy!<br><br>
+       <div>请使用谷歌浏览器、并安装钱包插件<a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a>来玩 不开心的事！</div>
+      </div>
+    </div>
+ </div>
+  <div class="container">
+    <nav class="text-right navbar-dark bg-dark ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <h2 class="account-name"></h2>
+        <h2 class="account-like"></h2>
+      </div>
+    </nav>
+
+    <h1>unHappy</h1>
+    <div class="setup-name hide">
+      <div class="card">
+        <div class="card-body">
+          <div class="row text-center">
+            <div class=" col-5 ml-5">
+              <input type="text" class="form-control" id="name-input" placeholder="输入个昵称">
+            </div>
+            <div class="col-2">
+              <button class="btn btn-mine join" onclick="App.register()">加入</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post-status">
+      <div class="card">
+        <div class="card-body">
+          <textarea class=" form-control" id="status-input" placeholder="把你那些不开心的事情说出来，让大家开心一下～" rows="3"></textarea>
+          <div class="float-right mt-3">
+            <button type="button" class="btn btn-mine " onclick="App.postStatus()">发布</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
+      <a class="navbar-brand" href="javascript:void(0)" onclick="App.initMainPage()">全部</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="javascript:void(0)" onclick="App.getMyLikes()">喜欢
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="App.getMyStatuses()">我的</a>
+          </li>
+        </ul>
+        <span id="status"></span>
+      </div>
+    </nav>
+
+
+    <div class="all-status"></div>
+
+    <div class="status-bottom text-center mt-3">
+      
+    </div>
+
+    <div class="footer card-body text-center">
+      <a href="">
+        <img src="./image/logo.png" width="150" height="50">
+      </a>
+      <div>基于星云链上的社交网络</div>
+    </div>
+
+    <div class="modal fade bd-example-modal-sm" id="warning" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content card-body">
+          <div class=" warning-msg"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+  
+  font-family: "Open Sans", sans-serif;
+}
+h1,h2{
+  color: #fff;
+}
+.hide{
+  display: none;
+}
+
+
+.btn-mine{
+  color:#FFF;
+  
+  background-color: #2C3E50;
+}
+.btn-mine:hover{
+  background-color: #49657E;
+}
+
+.black {
+  color: black;
+}
+
+
+
+
+.noExtension {
+  width: 100%;
+  margin: 100px auto;
+  text-align: center;
+  font-size: 23px;
+}
+.noExtension h1{
+  color: #F00;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.status-from{
+  color:#ddd;
+}
+.status-head{
+  color: #FFF;
+  background-color: #49657E;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  text-align: center;
+  line-height: 44px;
+}
+.status-name{
+  color: #666;
+}
+.status-time{
+  color: #999;
+}
+.status-bottom{
+  color: #666;
+}
+.footer{
+  color: #666;
+}
+
